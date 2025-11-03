@@ -1,0 +1,38 @@
+𝐃𝐀𝐘 𝟏 𝐎𝐅 𝐓𝐇𝐄 𝟐𝟏 𝐃𝐀𝐘𝐒 𝐎𝐅 𝐏𝐘𝐒𝐏𝐀𝐑𝐊 𝐂𝐇𝐀𝐋𝐋𝐄𝐍𝐆𝐄 started with the basics.
+
+-- 𝟏. 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧: 𝐋𝐢𝐬𝐭 𝐚𝐥𝐥 𝐮𝐧𝐢𝐪𝐮𝐞 𝐡𝐨𝐬𝐩𝐢𝐭𝐚𝐥 𝐬𝐞𝐫𝐯𝐢𝐜𝐞𝐬 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐢𝐧 𝐭𝐡𝐞 𝐡𝐨𝐬𝐩𝐢𝐭𝐚𝐥.
+
+
+-- 𝐈𝐧𝐢𝐭𝐢𝐚𝐭𝐞 𝐒𝐩𝐚𝐫𝐤 𝐒𝐞𝐬𝐬𝐢𝐨𝐧.
+
+𝐟𝐫𝐨𝐦 𝐩𝐲𝐬𝐩𝐚𝐫𝐤.𝐬𝐪𝐥 import 𝐒𝐩𝐚𝐫𝐤𝐒𝐞𝐬𝐬𝐢𝐨𝐧
+
+-- 𝐂𝐫𝐞𝐚𝐭𝐞 𝐨𝐫 𝐆𝐞𝐭 𝐚𝐧 𝐄𝐱𝐢𝐬𝐭𝐢𝐧𝐠 𝐒𝐩𝐚𝐫𝐤 𝐒𝐞𝐬𝐬𝐢𝐨𝐧.
+
+𝐬𝐩𝐚𝐫𝐤 = 𝐒𝐩𝐚𝐫𝐤𝐒𝐞𝐬𝐬𝐢𝐨𝐧.𝐛𝐮𝐢𝐥𝐝𝐞𝐫.𝐚𝐩𝐩𝐍𝐚𝐦𝐞("Hospital").𝐠𝐞𝐭𝐎𝐫𝐂𝐫𝐞𝐚𝐭𝐞()
+
+-- 𝐋𝐨𝐚𝐝 𝐲𝐨𝐮𝐫 𝐝𝐚𝐭𝐚 (𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬_𝐖𝐞𝐞𝐤𝐥𝐲 𝐢𝐬 𝐚 𝐂𝐒𝐕 𝐟𝐢𝐥𝐞; 𝐮𝐩𝐝𝐚𝐭𝐞 𝐩𝐚𝐭𝐡/𝐟𝐨𝐫𝐦𝐚𝐭 𝐚𝐬 𝐧𝐞𝐞𝐝𝐞𝐝).
+
+𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬_𝐖𝐞𝐞𝐤𝐥𝐲 = 𝐬𝐩𝐚𝐫𝐤.𝐫𝐞𝐚𝐝.𝐟𝐨𝐫𝐦𝐚𝐭("𝐜𝐬𝐯").𝐨𝐩𝐭𝐢𝐨𝐧("𝐇𝐞𝐚𝐝𝐞𝐫", 𝐓𝐫𝐮𝐞).𝐥𝐨𝐚𝐝("/21DaysPySparkChallenge/Datasets/services_weekly.csv").
+
+-- 𝐒𝐇𝐎𝐖 𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬_𝐖𝐞𝐞𝐤𝐥𝐲.𝐜𝐬𝐯 𝐅𝐢𝐥𝐞 𝐃𝐚𝐭𝐚𝐟𝐫𝐚𝐦𝐞.
+
+𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬_𝐖𝐞𝐞𝐤𝐥𝐲.𝐬𝐡𝐨𝐰()
+
+-- 𝐃𝐚𝐲 - 𝟏 - 𝐓𝐚𝐬𝐤: 𝐋𝐢𝐬𝐭 𝐚𝐥𝐥 𝐮𝐧𝐢𝐪𝐮𝐞 𝐡𝐨𝐬𝐩𝐢𝐭𝐚𝐥 𝐬𝐞𝐫𝐯𝐢𝐜𝐞𝐬 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐢𝐧 𝐭𝐡𝐞 𝐡𝐨𝐬𝐩𝐢𝐭𝐚𝐥. 𝐆𝐞𝐭 𝐎𝐧𝐥𝐲 𝐔𝐍𝐈𝐐𝐔𝐄 𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬 (𝐄𝐪𝐮𝐢𝐯𝐚𝐥𝐞𝐧𝐭 𝐓𝐨 𝐃𝐈𝐒𝐓𝐈𝐍𝐂𝐓).
+
+𝐔𝐧𝐢𝐪𝐮𝐞_𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬 = 𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬_𝐖𝐞𝐞𝐤𝐥𝐲.𝐬𝐞𝐥𝐞𝐜𝐭("service").𝐝𝐢𝐬𝐭𝐢𝐧𝐜𝐭()
+
+-- 𝐒𝐇𝐎𝐖 𝐚 𝐃𝐚𝐭𝐚𝐅𝐫𝐚𝐦𝐞 (𝐀𝐂𝐓𝐈𝐎𝐍).
+
+𝐔𝐧𝐢𝐪𝐮𝐞_𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬.𝐬𝐡𝐨𝐰()
+
+-- 𝐌𝐘 𝐋𝐄𝐀𝐑𝐍𝐈𝐍𝐆.
+
+𝐒𝐭𝐚𝐫𝐭 𝐰𝐢𝐭𝐡 𝐚 𝐒𝐩𝐚𝐫𝐤𝐒𝐞𝐬𝐬𝐢𝐨𝐧: Every PySpark job begins with creating or using an existing SparkSession. This is the entry point for any DataFrame operations in Spark.
+
+𝐃𝐚𝐭𝐚 𝐋𝐨𝐚𝐝𝐢𝐧𝐠 𝐰𝐢𝐭𝐡 𝐃𝐚𝐭𝐚𝐅𝐫𝐚𝐦𝐞 𝐀𝐏𝐈: PySpark makes it easy to load data from various sources (CSV, Parquet, databases, etc.) using spark.read. You can specify options like header=True for CSVs to correctly interpret your columns.
+
+𝐃𝐚𝐭𝐚 𝐄𝐱𝐩𝐥𝐨𝐫𝐚𝐭𝐢𝐨𝐧: Using .show(), you can preview your data to verify that it’s loaded correctly and check the structure — this is a good habit for every new dataset.
+
+𝐓𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧𝐬 𝐟𝐨𝐫 𝐃𝐢𝐬𝐭𝐢𝐧𝐜𝐭 𝐕𝐚𝐥𝐮𝐞𝐬: The method .select("Service").distinct() achieves the same result as SQL’s SELECT DISTINCT. It’s efficient and directly returns only the unique service values present in the DataFrame.
