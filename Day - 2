@@ -1,0 +1,49 @@
+𝐃𝐀𝐘 𝟐 𝐎𝐅 𝐓𝐇𝐄 𝟐𝟏 𝐃𝐀𝐘𝐒 𝐎𝐅 𝐏𝐘𝐒𝐏𝐀𝐑𝐊 𝐂𝐇𝐀𝐋𝐋𝐄𝐍𝐆𝐄 started with the basics.
+
+-- 𝟏. 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧: 𝐅𝐢𝐧𝐝 𝐚𝐥𝐥 𝐩𝐚𝐭𝐢𝐞𝐧𝐭𝐬 𝐚𝐝𝐦𝐢𝐭𝐭𝐞𝐝 𝐭𝐨 '𝐒𝐮𝐫𝐠𝐞𝐫𝐲' 𝐬𝐞𝐫𝐯𝐢𝐜𝐞 𝐰𝐢𝐭𝐡 𝐚 𝐬𝐚𝐭𝐢𝐬𝐟𝐚𝐜𝐭𝐢𝐨𝐧 𝐬𝐜𝐨𝐫𝐞 𝐛𝐞𝐥𝐨𝐰 𝟕𝟎, 𝐬𝐡𝐨𝐰𝐢𝐧𝐠 𝐭𝐡𝐞𝐢𝐫 𝐩𝐚𝐭𝐢𝐞𝐧𝐭_𝐢𝐝, 𝐧𝐚𝐦𝐞, 𝐚𝐠𝐞, 𝐚𝐧𝐝 𝐬𝐚𝐭𝐢𝐬𝐟𝐚𝐜𝐭𝐢𝐨𝐧 𝐬𝐜𝐨𝐫𝐞.
+
+
+-- 𝐈𝐧𝐢𝐭𝐢𝐚𝐭𝐞 𝐒𝐩𝐚𝐫𝐤 𝐒𝐞𝐬𝐬𝐢𝐨𝐧.
+
+𝐟𝐫𝐨𝐦 𝐩𝐲𝐬𝐩𝐚𝐫𝐤.𝐬𝐪𝐥 import 𝐒𝐩𝐚𝐫𝐤𝐒𝐞𝐬𝐬𝐢𝐨𝐧
+
+-- 𝐂𝐫𝐞𝐚𝐭𝐞 𝐨𝐫 𝐆𝐞𝐭 𝐚𝐧 𝐄𝐱𝐢𝐬𝐭𝐢𝐧𝐠 𝐒𝐩𝐚𝐫𝐤 𝐒𝐞𝐬𝐬𝐢𝐨𝐧.
+
+𝐬𝐩𝐚𝐫𝐤 = 𝐒𝐩𝐚𝐫𝐤𝐒𝐞𝐬𝐬𝐢𝐨𝐧.𝐛𝐮𝐢𝐥𝐝𝐞𝐫.𝐚𝐩𝐩𝐍𝐚𝐦𝐞("Hospital").𝐠𝐞𝐭𝐎𝐫𝐂𝐫𝐞𝐚𝐭𝐞()
+
+-- 𝐋𝐨𝐚𝐝 𝐲𝐨𝐮𝐫 𝐝𝐚𝐭𝐚.
+
+𝐏𝐚𝐭𝐢𝐞𝐧𝐭𝐬 = 𝐬𝐩𝐚𝐫𝐤.𝐫𝐞𝐚𝐝.𝐟𝐨𝐫𝐦𝐚𝐭("𝐜𝐬𝐯").𝐨𝐩𝐭𝐢𝐨𝐧("𝐇𝐞𝐚𝐝𝐞𝐫", 𝐓𝐫𝐮𝐞).𝐥𝐨𝐚𝐝("/21DaysPySparkChallenge/Datasets/patients.csv").
+
+-- 𝐒𝐇𝐎𝐖 𝐏𝐚𝐭𝐢𝐞𝐧𝐭𝐬.𝐜𝐬𝐯 𝐅𝐢𝐥𝐞 𝐃𝐚𝐭𝐚𝐟𝐫𝐚𝐦𝐞.
+
+𝐏𝐚𝐭𝐢𝐞𝐧𝐭𝐬.𝐬𝐡𝐨𝐰()
+
+-- 𝐃𝐚𝐲 - 𝟐 - 𝐒𝐎𝐋𝐔𝐓𝐈𝐎𝐍: 
+
+𝐟𝐫𝐨𝐦 𝐩𝐲𝐬𝐩𝐚𝐫𝐤.𝐬𝐪𝐥.𝐟𝐮𝐧𝐜𝐭𝐢𝐨𝐧𝐬 𝐢𝐦𝐩𝐨𝐫𝐭 𝐜𝐨𝐥
+𝐏𝐚𝐭𝐢𝐞𝐧𝐭𝐬_𝐒𝐚𝐭𝐢𝐬𝐟𝐚𝐜𝐭𝐢𝐨𝐧 = (
+ 𝐏𝐚𝐭𝐢𝐞𝐧𝐭𝐬.𝐟𝐢𝐥𝐭𝐞𝐫((𝐜𝐨𝐥("𝐬𝐞𝐫𝐯𝐢𝐜𝐞") == "𝐬𝐮𝐫𝐠𝐞𝐫𝐲") & (𝐜𝐨𝐥("𝐬𝐚𝐭𝐢𝐬𝐟𝐚𝐜𝐭𝐢𝐨𝐧") < 𝟕𝟎))
+ .𝐬𝐞𝐥𝐞𝐜𝐭("𝐏𝐚𝐭𝐢𝐞𝐧𝐭_𝐈𝐃", "𝐍𝐚𝐦𝐞", "𝐀𝐠𝐞", "𝐒𝐚𝐭𝐢𝐬𝐟𝐚𝐜𝐭𝐢𝐨𝐧")
+)
+
+-- 𝐒𝐇𝐎𝐖 𝐚 𝐃𝐚𝐭𝐚𝐅𝐫𝐚𝐦𝐞 (𝐀𝐂𝐓𝐈𝐎𝐍).
+
+𝐏𝐚𝐭𝐢𝐞𝐧𝐭𝐬_𝐒𝐚𝐭𝐢𝐬𝐟𝐚𝐜𝐭𝐢𝐨𝐧.𝐬𝐡𝐨𝐰()
+
+-- 𝐌𝐘 𝐋𝐄𝐀𝐑𝐍𝐈𝐍𝐆.
+
+𝐔𝐬𝐢𝐧𝐠 𝐏𝐲𝐒𝐩𝐚𝐫𝐤’𝐬 𝐃𝐚𝐭𝐚𝐅𝐫𝐚𝐦𝐞 𝐀𝐏𝐈 𝐟𝐨𝐫 𝐒𝐐𝐋-𝐥𝐢𝐤𝐞 𝐐𝐮𝐞𝐫𝐢𝐞𝐬:
+This code demonstrates how PySpark enables SQL-style filtering and selection using DataFrame operations, making it familiar for those with SQL backgrounds.
+
+𝐂𝐨𝐥𝐮𝐦𝐧 𝐀𝐜𝐜𝐞𝐬𝐬 𝐰𝐢𝐭𝐡 𝐜𝐨𝐥() 𝐅𝐮𝐧𝐜𝐭𝐢𝐨𝐧:
+By importing and using col() from pyspark.sql.functions, you can write readable, chainable expressions for column-based filters, such as (col("service") == "surgery") & (col("satisfaction") < 70).
+
+𝐁𝐨𝐨𝐥𝐞𝐚𝐧 𝐅𝐢𝐥𝐭𝐞𝐫𝐢𝐧𝐠 𝐰𝐢𝐭𝐡 𝐌𝐮𝐥𝐭𝐢𝐩𝐥𝐞 𝐂𝐨𝐧𝐝𝐢𝐭𝐢𝐨𝐧𝐬:
+Combining conditions using logical operators (&) allows you to perform complex row filtering efficiently (similar to SQL’s WHERE clause with multiple conditions).
+
+𝐒𝐞𝐥𝐞𝐜𝐭𝐢𝐧𝐠 𝐒𝐩𝐞𝐜𝐢𝐟𝐢𝐜 𝐅𝐢𝐞𝐥𝐝𝐬:
+The .select() method returns only the columns of interest — here, just Patient_ID, Name, Age, and Satisfaction. This mirrors the behavior of SQL’s SELECT clause and helps focus analysis.
+
+𝐎𝐮𝐭𝐩𝐮𝐭 𝐚𝐬 𝐚 𝐃𝐚𝐭𝐚𝐅𝐫𝐚𝐦𝐞:
+The result (Patients_Satisfaction) is a new DataFrame containing only the filtered data and selected columns, which can then be displayed or further processed.
